@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="main"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="d:\program files (x86)\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cJSON.c">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cJSON.h">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/main.c">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

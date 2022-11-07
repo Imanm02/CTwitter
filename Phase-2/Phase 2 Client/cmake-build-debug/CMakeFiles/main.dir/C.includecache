@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cJSON.h
+stddef.h
+-
+
+C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/main.c
+stdio.h
+-
+string.h
+-
+cJSON.h
+C:/Users/A.DESKTOP-L1TIDGL/CLionProjects/main/cJSON.h
+winsock2.h
+-
+
