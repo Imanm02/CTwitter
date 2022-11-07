@@ -7,3 +7,4 @@ Second Phase: Server
 
 ## Docs
 First doc includes client phase.
+Second doc includes server phase.
