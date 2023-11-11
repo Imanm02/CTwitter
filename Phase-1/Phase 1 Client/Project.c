@@ -503,8 +503,8 @@ void change_pass(){
     }
     fflush(stdin);
     getchar();
-
 }
+
 void log_out(){
     login = 0;
     char data[100];
