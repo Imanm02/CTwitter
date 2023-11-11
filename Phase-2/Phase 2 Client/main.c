@@ -313,7 +313,6 @@ void refresh(){
                         }
                     }
                 }
-
                 break;
             case 4:
                 return;
@@ -321,10 +320,8 @@ void refresh(){
                 puts("Wrong input");
         }
     }
-
     fflush(stdin);
     getchar();
-
 }
 
 void like(){
@@ -338,7 +335,6 @@ void like(){
     cJSON *res = cJSON_GetObjectItem(message, "message");
     puts(res->valuestring);
     printf("--------------------\n");
-
 }
 
 void comment(){
