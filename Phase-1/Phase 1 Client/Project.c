@@ -399,6 +399,7 @@ void Search(){
     fflush(stdin);
     getchar();
 }
+
 void tweet_profile(){
     system("cls");
     char data[200];
