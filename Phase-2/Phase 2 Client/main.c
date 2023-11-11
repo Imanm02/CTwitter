@@ -115,16 +115,13 @@ void log_in(){
     char name[100];
     fflush(stdin);
     scanf("%s", name);
-
     printf("Enter your password\n");
     char password[100];
     fflush(stdin);
     scanf("%s", password);
-
     char data[200];
     sprintf(data, "login %s, %s\n", name, password);
     char *response = send_data(data);
-
     cJSON *message = cJSON_Parse(response);
     cJSON *type = cJSON_GetObjectItem(message, "type");
     cJSON *res =cJSON_GetObjectItem(message, "message");
@@ -135,11 +132,8 @@ void log_in(){
         puts("\nLogged in successfully");
         login = 1;
     }
-
-
     fflush(stdin);
     getchar();
-
 }
 
 void sign_up(){
