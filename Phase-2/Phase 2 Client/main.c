@@ -71,9 +71,7 @@ char *send_data(char * data){
     send(client_socket, data, strlen(data), 0);
     recv(client_socket, buffer, 999, 0);
     closesocket(client_socket);
-
     return buffer;
-
 }
 
 void print_new(){
