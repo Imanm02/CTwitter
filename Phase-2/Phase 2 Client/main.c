@@ -272,7 +272,6 @@ void refresh(){
 
     int count = cJSON_GetArraySize(array);
 
-
     for (int i = 0; i < count; i++){
         cJSON *array2 = cJSON_GetArrayItem(array, i);
         cJSON *id = cJSON_GetObjectItem(array2, "id");
@@ -282,12 +281,10 @@ void refresh(){
         cJSON *likes = cJSON_GetObjectItem(array2, "likes");
         int num = cJSON_GetArraySize(comments);
 
-
         printf("ID : %d\t", id->valueint);
         printf("Author : %s\n", author->valuestring);
         printf("%s\n", content->valuestring);
         printf("likes : %d\tComments : %d\n--------------------\n", likes->valueint, num);
-
     }
     while(1) {
         printf("1. like\n2. comment\n3. show comments\n4. Return\n");
