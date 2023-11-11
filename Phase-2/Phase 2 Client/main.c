@@ -12,7 +12,6 @@ typedef struct{
     char message[100];
 }Struct;
 
-
 void log_in();
 void sign_up();
 void main_menu();
@@ -20,26 +19,19 @@ int initialize();
 char *send_data(char *);
 void print_new();
 void menu();
-
 void Timeline();
 void send_tweet();
 void refresh();
 void like();
 void comment();
-
 void Search();
-
 void tweet_profile();
-
 void personal_area();
 void set_bio();
 void change_pass();
-
 void log_out();
 
 int main() {
-
-
 
 
     if (initialize(12345) == 0){
