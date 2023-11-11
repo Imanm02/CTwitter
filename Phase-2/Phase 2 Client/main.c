@@ -518,9 +518,7 @@ void change_pass(){
     char data[100];
     sprintf(data,"change password %s, %s, %s\n", token, old_password, new_password);
     char *response = send_data(data);
-
     char *tok;
-
     tok = strtok(response, "\"");
     int count = 1;
     while (tok != NULL){
@@ -530,10 +528,8 @@ void change_pass(){
         count++;
         tok = strtok(NULL, "\"");
     }
-
     fflush(stdin);
     getchar();
-
 }
 
 void log_out(){
@@ -542,7 +538,6 @@ void log_out(){
     sprintf(data, "logout %s\n", token);
     send_data(data);
     printf("Goodbye\n");
-
     fflush(stdin);
     getchar();
 }
