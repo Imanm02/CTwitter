@@ -55,7 +55,7 @@ int FileCount(char *address){
     DIR * dirp;
     struct dirent * entry;
     int max = 0;
-    dirp = opendir(address); /* There should be error handling after this */
+    dirp = opendir(address);s
     while ((entry = readdir(dirp)) != NULL) {
         if (!strcmp(entry->d_name, ".") || !strcmp(entry->d_name, ".."))
             continue;
@@ -64,10 +64,6 @@ int FileCount(char *address){
     closedir(dirp);
     return max;
 }
-
-
-
-
 
 int initialize(int port);
 void start(int server_socket);
