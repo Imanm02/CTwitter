@@ -352,7 +352,6 @@ void comment(){
     cJSON *res = cJSON_GetObjectItem(message, "message");
     puts(res->valuestring);
     printf("--------------------\n");
-
 }
 
 void Search(){
@@ -362,9 +361,7 @@ void Search(){
     scanf("%s", name);
     char data[200];
     sprintf(data, "search %s, %s\n", token, name);
-
     char *response = send_data(data);
-
     cJSON *server_response = cJSON_Parse(response);
     cJSON *type = cJSON_GetObjectItem(server_response, "type");
     cJSON *message = cJSON_GetObjectItem(server_response, "message");
@@ -389,7 +386,6 @@ void Search(){
     printf("Followings : %d\n", Followings->valueint);
     printf("%s\n\n", status->valuestring);
 
-
     for (int i = 0; i < count;i++){
         cJSON *array2 = cJSON_GetArrayItem(array, i);
         cJSON *id = cJSON_GetObjectItem(array2, "id");
@@ -397,11 +393,9 @@ void Search(){
         cJSON *comments = cJSON_GetObjectItem(array2, "comments");
         cJSON *likes = cJSON_GetObjectItem(array2, "likes");
         int num = cJSON_GetArraySize(comments);
-
         printf("id : %d\n", id->valueint);
         puts(content->valuestring);
         printf("Likes : %d\tComments : %d\n--------------------\n", likes->valueint, num);
-
     }
     puts("Enter \"follow\" or \"unfollow\" if you wish to follow\\unfollow this user or pass");
     char follow[20];
