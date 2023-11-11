@@ -796,14 +796,6 @@ void comment(char *message, char **response){
 
 }
 
-
-
-
-
-
-
-
-
 int main(){
     mkdir(".\\res");
     mkdir(".\\res\\tweets");
@@ -843,7 +835,6 @@ int initialize(int port){
     listen(server_socket, SOMAXCONN);
 
     return server_socket;
-
 }
 
 void start(int server_socket) {
