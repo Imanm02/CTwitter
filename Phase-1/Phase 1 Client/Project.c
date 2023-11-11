@@ -174,6 +174,7 @@ void sign_up(){
     fflush(stdin);
     getchar();
 }
+
 void menu(){
     system("cls");
     printf("1. Timeline\n");
@@ -205,6 +206,7 @@ void menu(){
             getchar();
     }
 }
+
 void Timeline(){
     while(1) {
         system("cls");
@@ -229,6 +231,7 @@ void Timeline(){
         }
     }
 }
+
 void send_tweet(){
     system("cls");
     char tweet[400];
