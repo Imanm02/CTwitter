@@ -7,9 +7,9 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include <dirent.h>
+
 #define SIZE 1000
 #define PORT 12345
-
 
 char *randstring(int length) {
     static int mySeed = 25011984;
@@ -55,7 +55,7 @@ int FileCount(char *address){
     DIR * dirp;
     struct dirent * entry;
     int max = 0;
-    dirp = opendir(address);s
+    dirp = opendir(address);
     while ((entry = readdir(dirp)) != NULL) {
         if (!strcmp(entry->d_name, ".") || !strcmp(entry->d_name, ".."))
             continue;
