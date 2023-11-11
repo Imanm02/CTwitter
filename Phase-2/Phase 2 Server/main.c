@@ -750,7 +750,6 @@ void like(char *message, char **response){
     cJSON_AddStringToObject(res, "message", "You liked this tweet");
     *response = cJSON_Print(res);
     free(info);
-
 }
 
 void comment(char *message, char **response){
@@ -793,7 +792,6 @@ void comment(char *message, char **response){
     cJSON_AddStringToObject(res, "message", "You commented on this tweet");
     *response = cJSON_Print(res);
     free(info);
-
 }
 
 int main(){
