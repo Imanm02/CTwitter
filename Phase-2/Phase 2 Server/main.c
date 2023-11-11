@@ -896,18 +896,10 @@ void start(int server_socket) {
             refresh(buffer, &response);
         }
 
-
         printf("%s\n", response);
-
-
-
-
-
-
 
         send(client_socket, response, strlen(response), 0);
         closesocket(client_socket);
 
     }
-
 }
