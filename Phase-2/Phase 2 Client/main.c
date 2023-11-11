@@ -33,7 +33,6 @@ void change_pass();
 void log_out();
 
 int main() {
-
     if (initialize(12345) == 0){
         while(1) {
             main_menu();
