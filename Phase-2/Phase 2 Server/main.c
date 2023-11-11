@@ -402,7 +402,6 @@ void search(char *message, char **response){
     token[strlen(token) - 1] = '\0';
     username = nametok(token);
     cJSON *res = cJSON_CreateObject();
-    //puts("1");
     if (username == NULL){
         cJSON_AddStringToObject(res, "type", "Error");
         cJSON_AddStringToObject(res, "message", "Token is not valid");
@@ -410,7 +409,6 @@ void search(char *message, char **response){
         return;
     }
     sprintf(useraddr, "./res/user/%s.txt", search);
-    //puts("2");
     FILE *user;
     char *info = malloc(5000);
     user = fopen(useraddr, "r");
