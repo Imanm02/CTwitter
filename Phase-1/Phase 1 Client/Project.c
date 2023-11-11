@@ -85,6 +85,7 @@ void print_new(){
         m_index++;
     }
 }
+
 void main_menu(){
     system("cls");
     printf("Welcome to twitter\n");
@@ -105,6 +106,7 @@ void main_menu(){
             getchar();
     }
 }
+
 void log_in(){
     system("cls");
     printf("Enter your username\n");
@@ -123,7 +125,7 @@ void log_in(){
     cJSON *res =cJSON_GetObjectItem(message, "message");
     if (strcmp(type->valuestring, "Token") != 0){
         puts(res->valuestring);
-    }else{
+    } else{
         strcpy(token, res->valuestring);
         puts("\nLogged in successfully");
         login = 1;
@@ -131,6 +133,7 @@ void log_in(){
     fflush(stdin);
     getchar();
 }
+
 void sign_up(){
     system("cls");
     printf("1. I already have an account\n2. continue");
