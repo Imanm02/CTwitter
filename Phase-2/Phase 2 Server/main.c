@@ -158,28 +158,20 @@ void log_in(char *message, char **response){
         *response = cJSON_Print(res);
         return;
     }
-    //puts("3");
     char *token = malloc(40);
     token = randstring(32);
-
     sprintf(tok->valuestring, "%s", token);
-
     user = fopen(useraddr, "w");
     char *save = cJSON_Print(data);
     fprintf(user,"%s", save);
     fclose(user);
-    //puts("4");
     cJSON_AddStringToObject(res, "type", "Token");
-    //puts("1");
     cJSON_AddStringToObject(res, "message", tok->valuestring);
-    //puts("2");
     *response = cJSON_Print(res);
-    //puts("1");
     sprintf(useraddr, "./res/user/%s.txt", tok->valuestring);
     user = fopen(useraddr, "w");
     fprintf(user, "%s", username);
     fclose(user);
-
     free(info);
     free(token);
 
