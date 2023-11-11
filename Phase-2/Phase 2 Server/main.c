@@ -331,15 +331,10 @@ void send_tweet(char *message, char **response){
     }
     sprintf(useraddr, "./res/user/%s.txt", username);
     FILE *user;
-
     char *info = malloc(5000);
-
     user = fopen(useraddr, "r");
-
     fscanf(user, "%[^\0]s", info);
-
     fclose(user);
-    //puts("2");
     cJSON *save = cJSON_Parse(info);
     cJSON *personal = cJSON_GetObjectItem(save, "personalTweets");
     cJSON_AddItemToArray(personal, cJSON_CreateNumber(file));
@@ -347,11 +342,9 @@ void send_tweet(char *message, char **response){
     user = fopen(useraddr, "w");
     fprintf(user, "%s", info);
     fclose(user);
-
     cJSON_AddStringToObject(res, "type", "Successful");
     cJSON_AddStringToObject(res, "message", "Tweet sent");
     *response = cJSON_Print(res);
-
     sprintf(useraddr, "./res/tweets/%d.txt", file);
     cJSON *tweetj = cJSON_CreateObject();
     cJSON_AddNumberToObject(tweetj, "id", file);
