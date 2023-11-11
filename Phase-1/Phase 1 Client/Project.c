@@ -41,6 +41,7 @@ int main() {
     }
     return 0;
 }
+
 int initialize(int port) {
     WSADATA wsadata;
     int wsaStartUp = WSAStartup(MAKEWORD(2, 2), &wsadata);
@@ -53,6 +54,7 @@ int initialize(int port) {
     server.sin_port = htons(port);
     return 0;
 }
+
 char *send_data(char * data){
     char * buffer = malloc(1000);
     memset(buffer, 0, 1000);
@@ -69,6 +71,7 @@ char *send_data(char * data){
     closesocket(client_socket);
     return buffer;
 }
+
 void print_new(){
     while(1){
         char *message;
