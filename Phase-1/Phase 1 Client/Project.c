@@ -405,10 +405,8 @@ void tweet_profile(){
     char data[200];
     sprintf(data, "profile %s\n", token);
     char *response = send_data(data);
-
     cJSON *server_response = cJSON_Parse(response);
     cJSON *message = cJSON_GetObjectItem(server_response, "message");
-
     cJSON *username =cJSON_GetObjectItem(message, "username");
     cJSON *bio =cJSON_GetObjectItem(message, "bio");
     cJSON *Followers =cJSON_GetObjectItem(message, "numberOfFollowers");
@@ -433,6 +431,7 @@ void tweet_profile(){
     fflush(stdin);
     getchar();
 }
+
 void personal_area(){
     while(1) {
         system("cls");
@@ -457,6 +456,7 @@ void personal_area(){
         }
     }
 }
+
 void set_bio(){
     system("cls");
 
