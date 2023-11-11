@@ -412,20 +412,15 @@ void Search(){
         send_data(data1);
         printf("You unfollowed %s", name);
     }
-
-
-
     fflush(stdin);
     getchar();
 }
 
 void tweet_profile(){
-
     system("cls");
     char data[200];
     sprintf(data, "profile %s\n", token);
     char *response = send_data(data);
-
     cJSON *server_response = cJSON_Parse(response);
     cJSON *type = cJSON_GetObjectItem(server_response, "type");
     cJSON *message = cJSON_GetObjectItem(server_response, "message");
@@ -459,10 +454,7 @@ void tweet_profile(){
         printf("id : %d\n", id->valueint);
         puts(content->valuestring);
         printf("Likes : %d\tComments : %d\n--------------------\n", likes->valueint, num);
-
     }
-
-
     fflush(stdin);
     getchar();
 }
