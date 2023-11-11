@@ -219,7 +219,6 @@ void logout(char *message, char **response){
     user = fopen(useraddr, "w");
     fprintf(user, "%s", info1);
     fclose(user);
-
     cJSON_AddStringToObject(res, "type", "Successful");
     cJSON_AddStringToObject(res, "message", "");
     *response = cJSON_Print(res);
@@ -259,7 +258,6 @@ void setbio(char *message, char **response){
     user = fopen(useraddr, "w");
     fprintf(user, "%s", info1);
     fclose(user);
-
     cJSON_AddStringToObject(res, "type", "Successful");
     cJSON_AddStringToObject(res, "message", "Bio set successfully");
     *response = cJSON_Print(res);
