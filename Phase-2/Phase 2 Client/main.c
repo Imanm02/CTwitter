@@ -7,10 +7,11 @@ struct sockaddr_in server;
 int m_index = 0;
 char token[50];
 int login = 0;
+
 typedef struct{
     char type[10];
     char message[100];
-}Struct;
+} Struct;
 
 void log_in();
 void sign_up();
@@ -32,7 +33,6 @@ void change_pass();
 void log_out();
 
 int main() {
-
 
     if (initialize(12345) == 0){
         while(1) {
