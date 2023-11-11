@@ -204,10 +204,7 @@ void logout(char *message, char **response){
     fscanf(user, "%s", username);
     fclose(user);
     remove(useraddr);
-
     sprintf(useraddr, "./res/user/%s.txt", username);
-
-
     user = fopen(useraddr, "r");
     char *info = malloc(5000);
     fscanf(user, "%[^\0]s", info);
