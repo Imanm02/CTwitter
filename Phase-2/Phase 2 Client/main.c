@@ -51,8 +51,6 @@ int initialize(int port) {
     printf("Error\n");
     return -1;
     }
-
-
     server.sin_family = AF_INET;
     server.sin_addr.s_addr = inet_addr("127.0.0.1");
     server.sin_port = htons(port);
@@ -62,18 +60,14 @@ int initialize(int port) {
 char *send_data(char * data){
     char * buffer = malloc(1000);
     memset(buffer, 0, 1000);
-
     int client_socket = socket(AF_INET, SOCK_STREAM, 0);
     if(client_socket == INVALID_SOCKET){
         return "error1";
     }
-
     int can_connect = connect(client_socket, (struct sockaddr *) &server, sizeof(server));
     if (can_connect != 0){
         return "error2";
     }
-
-
     send(client_socket, data, strlen(data), 0);
     recv(client_socket, buffer, 999, 0);
     closesocket(client_socket);
