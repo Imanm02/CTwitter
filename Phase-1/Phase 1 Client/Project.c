@@ -459,7 +459,6 @@ void personal_area(){
 
 void set_bio(){
     system("cls");
-
         printf("Please set your bio\n");
         char bio[200];
         fflush(stdin);
@@ -477,8 +476,8 @@ void set_bio(){
         puts(cjson.message);
         fflush(stdin);
         getchar();
-
 }
+
 void change_pass(){
     system("cls");
     printf("Enter your current password\n");
