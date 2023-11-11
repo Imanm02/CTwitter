@@ -682,7 +682,6 @@ void refresh(char *message, char **response){
 
 void like(char *message, char **response){
     char *username, token[40], tweet_addr[80];
-
     int tweet_id;
 
     sscanf(message, "%*s %s %d", token, &tweet_id);
