@@ -482,12 +482,10 @@ void personal_area(){
                 getchar();
         }
     }
-
 }
 
 void set_bio(){
     system("cls");
-
         printf("Please set your bio\n");
         char bio[200];
         fflush(stdin);
@@ -496,22 +494,15 @@ void set_bio(){
         sprintf(data, "set bio %s, %s\n",token, bio);
         char *response = cJSON_Parse(send_data(data));
         puts(response);
-
-
         Struct cjson;
-
         sprintf(cjson.type ,"%s", cJSON_GetStringValue
         (cJSON_GetObjectItemCaseSensitive(response , "type")));
         sprintf(cjson.message ,"%s", cJSON_GetStringValue
         (cJSON_GetObjectItemCaseSensitive(response , "message")));
-
         puts(cjson.type);
         puts(cjson.message);
-
-
         fflush(stdin);
         getchar();
-
 }
 
 void change_pass(){
