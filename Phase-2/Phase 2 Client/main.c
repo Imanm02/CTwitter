@@ -2,6 +2,7 @@
 #include <string.h>
 #include "cJSON.h"
 #include <winsock2.h>
+
 struct sockaddr_in server;
 int m_index = 0;
 char token[50];
@@ -10,8 +11,6 @@ typedef struct{
     char type[10];
     char message[100];
 }Struct;
-
-
 
 
 void log_in();
