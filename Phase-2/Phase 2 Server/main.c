@@ -806,9 +806,7 @@ int initialize(int port){
         printf("Bind Faild");
         return INVALID_SOCKET;
     }
-
     listen(server_socket, SOMAXCONN);
-
     return server_socket;
 }
 
@@ -836,7 +834,6 @@ void start(int server_socket) {
         if (strcmp(type, "signup") == 0){
             signup(buffer, &response);
         }else if (strcmp(type, "login") == 0){
-            //printf("1");
             log_in(buffer, &response);
         }else if (strcmp(type, "logout") == 0){
             logout(buffer, &response);
