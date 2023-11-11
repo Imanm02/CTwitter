@@ -246,6 +246,7 @@ void send_tweet(){
     fflush(stdin);
     getchar();
 }
+
 void refresh(){
     system("cls");
     char data[100];
@@ -298,7 +299,6 @@ void refresh(){
                         }
                     }
                 }
-
                 break;
             case 4:
                 return;
@@ -306,11 +306,10 @@ void refresh(){
                 puts("Wrong input");
         }
     }
-
     fflush(stdin);
     getchar();
-
 }
+
 void like(){
     puts("Enter id of the tweet");
     char id[20];
