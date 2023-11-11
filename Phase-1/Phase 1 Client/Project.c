@@ -323,6 +323,7 @@ void like(){
     printf("--------------------\n");
 
 }
+
 void comment(){
     puts("Enter id of the tweet");
     char id[20];
@@ -338,8 +339,8 @@ void comment(){
     cJSON *res = cJSON_GetObjectItem(message, "message");
     puts(res->valuestring);
     printf("--------------------\n");
-
 }
+
 void Search(){
     system("cls");
     printf("Enter the username you are looking for:\n");
@@ -347,9 +348,7 @@ void Search(){
     scanf("%s", name);
     char data[200];
     sprintf(data, "search %s, %s\n", token, name);
-
     char *response = send_data(data);
-
     cJSON *server_response = cJSON_Parse(response);
     cJSON *type = cJSON_GetObjectItem(server_response, "type");
     cJSON *message = cJSON_GetObjectItem(server_response, "message");
