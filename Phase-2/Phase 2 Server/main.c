@@ -689,18 +689,15 @@ void refresh(char *message, char **response){
             cJSON_AddItemToArray(messag, temp);
         }
     }
-    //puts("1");
     cJSON_AddStringToObject(res, "type", "List");
     cJSON_AddItemToObject(res, "message", messag);
     *response = cJSON_Print(res);
     sprintf(useraddr, "./res/user/%s.txt", username);
-    //puts("1");
     user = fopen(useraddr, "w");
     char *info3 = cJSON_Print(user1);
     fprintf(user, "%s", info3);
     fclose(user);
     free(info);
-
 }
 
 void like(char *message, char **response){
