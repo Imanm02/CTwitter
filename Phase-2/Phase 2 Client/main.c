@@ -152,14 +152,12 @@ void sign_up(){
     char password[100];
     fflush(stdin);
     scanf("%s", password);
-
     char send[100];
     sprintf(send, "signup %s, %s\n", name, password);
     char *server_response = send_data(send);
     char server_response1[100];
     printf("\n");
     char *tok;
-
     tok = strtok(server_response,"\"");
     int count = 1;
     while(tok != NULL){
@@ -175,10 +173,8 @@ void sign_up(){
         count++;
         tok = strtok(NULL, "\"");
     }
-
     fflush(stdin);
     getchar();
-
 }
 
 void menu(){
