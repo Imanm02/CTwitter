@@ -13,7 +13,7 @@ Second Phase: Server
 - [Overview](#overview)
 - [Docs](#docs)
 - [Maintainer](#maintainer)
-- 
+
 ## Docs
 The first doc includes the client phase.
 The second doc includes the server phase.
